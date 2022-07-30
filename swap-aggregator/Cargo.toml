@@ -1,0 +1,35 @@
+[package]
+name = "swap-aggregator"
+version = "0.0.1"
+description = "CleanDefi Swap Aggregator"
+authors = ["Tadashi"]
+repository = "https://gitlab.com/merehead/cleandfi/cleandfi_blockchain"
+
+license = "Apache-2.0"
+homepage = "https://solana.com/"
+edition = "2018"
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+bytemuck = "1.7.2"
+borsh = "0.9.1"
+borsh-derive = "0.9.1"
+solana-program = "1.7.8"
+num-derive = "0.3"
+num-traits = "0.2"
+thiserror = "1.0"
+anchor-lang = "0.13.2"
+anchor-spl = "0.13.2"
+spl-token = { version = "3.2.0", features = ["no-entrypoint"] }
+safe-transmute = "0.11.0"
+arrayref = "0.3.6"
+stable-swap-client = "1.5.2"
+
+[dev-dependencies]
+solana-program-test = "1.7.8"
+solana-sdk = "1.7.8"
+
+[lib]
+crate-type = ["cdylib", "lib"]

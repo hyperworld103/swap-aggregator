@@ -1,0 +1,19 @@
+{
+  "name": "sol-liquity",
+  "version": "0.0.1",
+  "description": "Solana Liquity Protocol",
+  "license": "",
+  "scripts": {
+    "push":"git add . && git commit -m 'auto updates' && git push",
+    "switch-localnet":"solana config set --url localhost",
+    "switch-devnet":"solana config set --url devnet",
+    "switch-testnet":"solana config set --url testnet",
+    "switch-mainnet-beta":"solana config set --url mainnet-beta",
+    "start-server": "solana-test-validator",
+
+    "build": "cargo build-bpf",
+    "clean": "cargo clean  && rm -rf ./solana/program/target",
+    "deploy":"solana program deploy ./target/deploy/swap_aggregator.so",
+    "test": "cargo test-bpf"
+  }
+}
