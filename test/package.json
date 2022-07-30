@@ -1,0 +1,20 @@
+{
+  "name": "swap-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npx ts-node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@solana/web3.js": "^1.50.1"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.2.0",
+    "axios": "^0.27.2",
+    "buffer-layout": "^1.2.2"
+  }
+}
